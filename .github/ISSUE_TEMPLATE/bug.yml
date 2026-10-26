@@ -1,0 +1,39 @@
+name: Bug report
+description: Something in Marvio doesn't work as it should
+title: "[Bug] "
+labels: ["feedback", "bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. Don't include passwords, tokens or your customers' private data."
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the problem. Screenshots are welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Click …
+        3. See …
+  - type: input
+    id: where
+    attributes:
+      label: Where in Marvio?
+      placeholder: e.g. Social → Calendar, Brand Essence, Create image
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: e.g. Chrome 140 on macOS
